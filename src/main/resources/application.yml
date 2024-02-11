@@ -1,0 +1,20 @@
+
+
+file-watcher:
+  daemon: true
+  input: "E:/TEST"
+  output: "./test"
+  quiet-period: 2
+  poll-interval: 5
+
+spring:
+  application:
+    name: MyFileWatcher
+
+db:
+  username: mfw
+  password: mfw
+  db-name: mfw
+  db-url: jdbc:h2:file:./db_data/mfw;AUTO_SERVER=TRUE;MODE=PostgreSQL;
+server:
+  port: 7890
