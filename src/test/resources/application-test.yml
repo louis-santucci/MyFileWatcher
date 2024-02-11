@@ -1,0 +1,8 @@
+
+
+file-watcher:
+  daemon: true
+  input: "./target/test/input"
+  output: "./target/test/output"
+  quiet-period: 10
+  poll-interval: 60
